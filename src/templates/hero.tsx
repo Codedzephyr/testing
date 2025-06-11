@@ -1,18 +1,7 @@
 import { Button, Typography, Row, Col, Carousel } from "antd";
-import type { CarouselProps } from "antd";
 import './carousel.css'
 
-const { Title, Paragraph, Text } = Typography;
-
-type DotPosition = CarouselProps["dotPosition"];
-
-// const contentStyle: React.CSSProperties = {
-// //   height: "20rem",
-//   //   color: "#fff",
-//   //   lineHeight: "160px",
-//   //   textAlign: "center",
-//   //   background: "#364d79",
-// };
+const { Title, Paragraph } = Typography;
 
 const HeroSection = () => {
   return (
@@ -32,9 +21,9 @@ const HeroSection = () => {
               fontWeight: 700,
               fontSize: "4.5rem",
               backgroundClip: "text",
-              WebkitBackgroundClip: "text", // Safari & Chrome support
+              WebkitBackgroundClip: "text", 
               color: "transparent",
-              WebkitTextFillColor: "transparent", // Safari & Chrome support
+              WebkitTextFillColor: "transparent", 
             }}
           >
             Digital Banking

@@ -1,5 +1,3 @@
-
-/* Positioning: bottom (default), top, right */
 .custom-carousel .slick-dots {
   position: absolute;
   bottom: 0;
@@ -11,14 +9,12 @@
   list-style: none;
 }
 
-/* Top aligned dots */
 .custom-carousel .slick-dots.slick-dots-top {
-  top: 32px; /* Customize this if using a variable like dotOffset */
+  top: 32px; 
   bottom: auto;
   flex-direction: row;
 }
 
-/* Right aligned vertical dots */
 .custom-carousel .slick-dots.slick-dots-right {
   top: 50%;
   right: 0;
@@ -29,29 +25,10 @@
   align-items: center;
 }
 
-/* Bottom aligned dots (default) */
 .custom-carousel .slick-dots.slick-dots-bottom {
-  bottom: 32px; /* Customize as needed */
+  bottom: 32px; 
   flex-direction: row;
 }
-
-/* Base dot item */
-/* .custom-carousel .slick-dots li {
-  position: relative;
-  display: inline-block;
-  flex: 0 1 auto;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  padding: 0;
-  text-align: center;
-  text-indent: -9999px;
-  vertical-align: top;
-  transition: all 0.3s ease;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-block: 8px; /* For vertical (right-aligned) layout */
-/* } */
 
 .custom-carousel .slick-dots li {
   position: relative;
@@ -72,12 +49,11 @@
 }
 
 
-/* Base dot button */
 .custom-carousel .slick-dots li button {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: rgba(172, 50, 130, 0.1); /* semi-transparent pink */
+  background-color: rgba(172, 50, 130, 0.1); 
   border: 2px solid #AC3282;
   opacity: 1;
   transition: all 0.3s ease;
@@ -87,28 +63,23 @@
   display: block;
 }
 
-/* Ensure li has no interfering styles */
 .custom-carousel .slick-dots li {
-  /* margin: 8px 0; */
   padding: 0;
   overflow: visible;
 }
 
-/* ACTIVE dot — solid filled circle */
 .custom-carousel .slick-dots li.slick-active button {
   background-color: #AC3282;
   border-color: #AC3282;
   opacity: 1;
 }
 
-/* Disable any ::after effects that might cut or animate dot */
 .custom-carousel .slick-dots li::after,
 .custom-carousel .slick-dots li button::after {
   content: none !important;
   display: none !important;
 }
 
-/* Animate active background */
 .custom-carousel .slick-dots li.slick-active::after {
   transform: translate3d(0, 0, 0);
 }
