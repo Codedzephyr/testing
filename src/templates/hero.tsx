@@ -91,7 +91,6 @@ const HeroSection = () => {
             style={{
               height: "500px",
               position: 'relative',
-              backgroundColor: 'orange'
             }}
           >
             <div>
