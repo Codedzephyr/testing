@@ -1,0 +1,122 @@
+
+/* Positioning: bottom (default), top, right */
+.custom-carousel .slick-dots {
+  position: absolute;
+  bottom: 0;
+  z-index: 15;
+  display: flex !important;
+  justify-content: center;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Top aligned dots */
+.custom-carousel .slick-dots.slick-dots-top {
+  top: 32px; /* Customize this if using a variable like dotOffset */
+  bottom: auto;
+  flex-direction: row;
+}
+
+/* Right aligned vertical dots */
+.custom-carousel .slick-dots.slick-dots-right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  flex-direction: column;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bottom aligned dots (default) */
+.custom-carousel .slick-dots.slick-dots-bottom {
+  bottom: 32px; /* Customize as needed */
+  flex-direction: row;
+}
+
+/* Base dot item */
+/* .custom-carousel .slick-dots li {
+  position: relative;
+  display: inline-block;
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  text-align: center;
+  text-indent: -9999px;
+  vertical-align: top;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-block: 8px; /* For vertical (right-aligned) layout */
+/* } */
+
+.custom-carousel .slick-dots li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  box-sizing: content-box;
+  padding: 0;
+  text-align: center;
+  text-indent: 0;
+  vertical-align: top;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: visible;
+  margin-block: 8px;
+}
+
+
+/* Base dot button */
+.custom-carousel .slick-dots li button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(172, 50, 130, 0.1); /* semi-transparent pink */
+  border: 2px solid #AC3282;
+  opacity: 1;
+  transition: all 0.3s ease;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  display: block;
+}
+
+/* Ensure li has no interfering styles */
+.custom-carousel .slick-dots li {
+  /* margin: 8px 0; */
+  padding: 0;
+  overflow: visible;
+}
+
+/* ACTIVE dot — solid filled circle */
+.custom-carousel .slick-dots li.slick-active button {
+  background-color: #AC3282;
+  border-color: #AC3282;
+  opacity: 1;
+}
+
+/* Disable any ::after effects that might cut or animate dot */
+.custom-carousel .slick-dots li::after,
+.custom-carousel .slick-dots li button::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Animate active background */
+.custom-carousel .slick-dots li.slick-active::after {
+  transform: translate3d(0, 0, 0);
+}
+
+:where(.css-dev-only-do-not-override-mc1tut).ant-carousel-vertical .slick-dots li.slick-active button{
+  width: 16px;
+}
+
+:where(.css-dev-only-do-not-override-mc1tut).ant-carousel-vertical .slick-dots li.slick-active{
+  width: 16px;
+}

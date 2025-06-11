@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.ant-typography {
+  color: #333;
+}
+html {
+  font-size: 62.5%; /* makes 1rem = 10px */
+}
+
+:where(.css-dev-only-do-not-override-mc1tut).ant-carousel .slick-dots li::after{
+  background-color: #AC3282;
+}
