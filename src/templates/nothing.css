@@ -1,0 +1,72 @@
+.transfer-section {
+  display: flex;
+  gap: 4rem;
+  padding: 6rem 10rem;
+  align-items: center;
+  background: linear-gradient(to right, #fff, #fff5f9);
+  overflow: hidden;
+}
+
+.transfer-text {
+  flex: 1;
+}
+
+.transfer-text h2 {
+  font-size: 3rem;
+  color: #ac3282;
+  margin-bottom: 1rem;
+}
+
+.transfer-text p {
+  font-size: 1.6rem;
+  color: #ac3282;
+  margin-bottom: 1rem;
+  max-width: 40rem;
+}
+
+.transfer-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.transfer-buttons img {
+  width: 120px;
+  object-fit: contain;
+}
+
+.transfer-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.transfer-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.2rem;
+}
+
+.transfer-image::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at center, rgba(172, 50, 130, 0.1), transparent 70%);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .transfer-section {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .transfer-buttons {
+    justify-content: center;
+  }
+}
