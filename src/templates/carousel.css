@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+.wrapper{
+  
+}
+
 .custom-carousel .slick-dots.slick-dots-top {
   top: 32px; 
   bottom: auto;

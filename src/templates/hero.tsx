@@ -1,5 +1,6 @@
 import { Button, Typography, Row, Col, Carousel } from "antd";
 import "./carousel.css";
+import '../app.css'
 
 const { Title, Paragraph } = Typography;
 
