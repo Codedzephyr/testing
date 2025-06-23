@@ -1,5 +1,4 @@
 import "antd/dist/reset.css";
-import "./App.css";
 import { Layout } from "antd";
 
 import HeroSection from "./templates/hero";
