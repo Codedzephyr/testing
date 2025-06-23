@@ -1,17 +1,12 @@
 import { Button, Typography, Row, Col, Carousel } from "antd";
-import './carousel.css'
+import "./carousel.css";
 
 const { Title, Paragraph } = Typography;
 
 const HeroSection = () => {
   return (
     <div
-      style={{
-        paddingLeft: "10rem",
-        paddingRight: "10rem",
-        paddingTop: "15rem",
-        backgroundColor: "#fff",
-      }}
+      className="wrapper"
     >
       <Row gutter={[32, 32]} align="middle">
         <Col xs={24} md={12}>
@@ -21,10 +16,10 @@ const HeroSection = () => {
               fontWeight: 700,
               fontSize: "4.5rem",
               backgroundClip: "text",
-              WebkitBackgroundClip: "text", 
-              color: "transparent",
-              WebkitTextFillColor: "transparent", 
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
+            className="digital-banking"
           >
             Digital Banking
             <br />
@@ -33,7 +28,7 @@ const HeroSection = () => {
             get you more
           </Title>
           <Button
-            type="primary"
+          type="primary"
             size="large"
             style={{
               backgroundColor: "#AC3282",
@@ -45,7 +40,8 @@ const HeroSection = () => {
           </Button>
 
           <Paragraph
-            style={{ fontSize: "1.5rem", width: "75%", color: "#AC3282" }}
+            style={{ fontSize: "1.5rem", color: "#AC3282" }}
+            className="redefined"
           >
             We have redefined the meaning of more when it comes to virtual
             banking services in Nigeria.
@@ -56,8 +52,8 @@ const HeroSection = () => {
               marginBottom: "2rem",
               fontSize: "1.5rem",
               fontWeight: "700",
-              width: "75%",
             }}
+            className="absolutely"
           >
             With absolutely zero charge on transactions, free account
             maintenance and monthly interest on savings, what’s your excuse
@@ -71,6 +67,7 @@ const HeroSection = () => {
               fontSize: "1.7rem",
               marginBottom: "2rem",
             }}
+            className="enjoy"
           >
             Enjoy easy-to-use budgeting features and analytics
           </Paragraph>
@@ -87,10 +84,11 @@ const HeroSection = () => {
             dotPosition="right"
             className="custom-carousel"
             dots={true}
-            autoplay={{ dotDuration: true }} autoplaySpeed={5000}
+            autoplay={{ dotDuration: true }}
+            autoplaySpeed={5000}
             style={{
               height: "500px",
-              position: 'relative',
+              position: "relative",
             }}
           >
             <div>
@@ -98,7 +96,7 @@ const HeroSection = () => {
                 src="/slider/slider1.jpg"
                 style={{
                   width: "100%",
-                  height: "500px", 
+                  height: "500px",
                   objectFit: "cover",
                 }}
                 alt="Slide 1"

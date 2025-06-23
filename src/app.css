@@ -10,7 +10,7 @@
   > .ant-menu.ant-menu-horizontal
   > .ant-menu-submenu-selected::after {
   border-bottom-color: transparent;
-  color: #590140
+  color: #590140;
 }
 
 /* Hover item - also add pink bottom border on hover */
@@ -25,7 +25,7 @@
   > .ant-menu.ant-menu-horizontal
   > .ant-menu-submenu:hover::after {
   border-bottom-color: transparent;
-  color: #590140
+  color: #590140;
 }
 
 body {
@@ -49,6 +49,27 @@ body {
   box-shadow: none;
 }
 
+.wrapper {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  background-color: #fff;
+}
+
+/* navbar */
+.header {
+  padding: 0 10rem;
+}
+
+  .redefined {
+    width: 75%;
+  }
+  .absolutely {
+    width: 75%;
+  }
+
+
 /* On small screens, show hamburger instead */
 @media (max-width: 768px) {
   .desktop-menu {
@@ -57,5 +78,30 @@ body {
 
   .mobile-menu {
     display: flex;
+  }
+
+  .digital-banking {
+    text-align: center;
+  }
+
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+
+  .redefined {
+    text-align: center;
+    width: 100%;
+  }
+  .absolutely {
+    text-align: center;
+    width: 100%;
+  }
+  .enjoy {
+    text-align: center;
   }
 }

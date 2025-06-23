@@ -35,8 +35,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   box-sizing: content-box;
   padding: 0;
   text-align: center;
@@ -50,8 +50,8 @@
 
 
 .custom-carousel .slick-dots li button {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: rgba(172, 50, 130, 0.1); 
   border: 2px solid #AC3282;
@@ -85,9 +85,10 @@
 }
 
 :where(.css-dev-only-do-not-override-mc1tut).ant-carousel-vertical .slick-dots li.slick-active button{
-  width: 16px;
+  width: 10px;
+  height: 10px;
 }
 
 :where(.css-dev-only-do-not-override-mc1tut).ant-carousel-vertical .slick-dots li.slick-active{
-  width: 16px;
+  width: 10px;
 }

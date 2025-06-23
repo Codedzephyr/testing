@@ -1,6 +1,7 @@
 import { MenuOutlined } from "@ant-design/icons";
 import { Menu, Layout, Drawer, Button } from "antd";
 import { useState } from "react";
+import "./carousel.css"
 
 const { Header } = Layout;
 
@@ -22,9 +23,9 @@ const Navbar = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "0 10rem",
         boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
       }}
+      className="header"
     >
       <div
         style={{
